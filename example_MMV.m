@@ -43,7 +43,7 @@ y = S * y_noisy;
 % ie., the probability that we over estimate the size of the
 % support set is fixed to some pre-determined number p_fa
 p_fa = 1e-2;
-% tau = sigma^2 * ( log(N) - log( log(1/(1-p_fa)) ) );
+% tau = sigma * ( log(N) - log( log(1/(1-p_fa)) ) );
 % T = 1;
 tau= sigma*chi2inv((1-p_fa)^(1/N), 2*T)/2;
 
