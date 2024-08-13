@@ -30,7 +30,7 @@ S = eye(N);
 
 %% Measurements
 % add measurement noise
-noise = sigma*(randn(N,T) + 1j*randn(N,T))/sqrt(2);
+noise = sqrt(sigma)*(randn(N,T) + 1j*randn(N,T))/sqrt(2);
 y_noisy = y_full + noise;
 
 % take measurements
